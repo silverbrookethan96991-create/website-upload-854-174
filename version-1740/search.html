@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索影片-推荐电影大全-高分电影排行榜-高清影片在线观看</title>
+    <meta name="description" content="推荐电影大全页面结合热度与口碑整理影片，提供榜单参考和精选浏览内容。">
+    <meta name="keywords" content="推荐电影大全,高分电影排行榜,高清影片,电影推荐,热门电影,口碑电影,电影榜单">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="主导航">
+            <div class="nav-inner">
+                <a class="brand" href="index.html" aria-label="返回首页">
+                    <span class="brand-icon" aria-hidden="true">▶</span>
+                    <span class="brand-text">
+                        <strong>高清电影大全</strong>
+                        <small>高分电影排行榜</small>
+                    </span>
+                </a>
+
+                <button class="mobile-menu-button" type="button" aria-label="打开菜单" data-menu-toggle>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" data-nav-menu>
+                    <a href="index.html">首页</a>
+                    <a href="movies/index.html">全部影片</a>
+                    <div class="nav-dropdown">
+                        <a href="categories.html">分类</a>
+                        <div class="dropdown-menu">
+                            <a href="categories/region-domestic.html">国产电影</a>
+                            <a href="categories/region-japan-korea.html">日韩电影</a>
+                            <a href="categories/region-euro-american.html">欧美电影</a>
+                            <a href="categories/region-other-region.html">其他地区</a>
+                        </div>
+                    </div>
+                    <a href="ranking.html">排行榜</a>
+                    <a href="search.html">搜索</a>
+                    <form class="nav-search" action="search.html" method="get">
+                        <input type="search" name="q" placeholder="搜索电影、类型、地区" aria-label="搜索影片">
+                        <button type="submit">搜索</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero compact-page-hero search-hero">
+            <div class="container">
+                <span class="eyebrow">搜索 / 筛选</span>
+                <h1>搜索影片</h1>
+                <p>支持按标题、简介、地区、类型、题材标签实时筛选。</p>
+                <form class="search-panel" data-search-form>
+                    <input type="search" name="q" placeholder="输入电影名、题材、地区或关键词" autocomplete="off">
+                    <button type="submit">搜索</button>
+                    <div class="filter-row">
+                        <label>
+                            地区
+                            <select name="regionGroup">
+                                <option value="">全部地区</option>
+                            <option value="国产电影">国产电影</option>
+                            <option value="日韩电影">日韩电影</option>
+                            <option value="欧美电影">欧美电影</option>
+                            <option value="其他地区">其他地区</option>
+                            </select>
+                        </label>
+                        <label>
+                            类型
+                            <select name="type">
+                                <option value="">全部类型</option>
+                            <option value="电影">电影</option>
+                            <option value="剧集">剧集</option>
+                            <option value="电视剧">电视剧</option>
+                            <option value="动画电影">动画电影</option>
+                            <option value="动画剧集">动画剧集</option>
+                            <option value="综艺">综艺</option>
+                            <option value="纪录片">纪录片</option>
+                            <option value="网络电影">网络电影</option>
+                            <option value="动画">动画</option>
+                            <option value="网络剧">网络剧</option>
+                            <option value="电影/动画">电影/动画</option>
+                            <option value="网剧">网剧</option>
+                            <option value="动漫">动漫</option>
+                            <option value="动画短片">动画短片</option>
+                            <option value="网剧/短剧">网剧/短剧</option>
+                            <option value="电视剧集">电视剧集</option>
+                            <option value="OVA">OVA</option>
+                            <option value="剧集/迷你剧">剧集/迷你剧</option>
+                            <option value="剧集/动画">剧集/动画</option>
+                            <option value="TV Series">TV Series</option>
+                            </select>
+                        </label>
+                        <label>
+                            年份
+                            <select name="year">
+                                <option value="">全部年份</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2023">2023</option>
+                            <option value="2026">2026</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2027">2027</option>
+                            <option value="2015">2015</option>
+                            <option value="2011">2011</option>
+                            <option value="1993">1993</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="1992">1992</option>
+                            <option value="1990">1990</option>
+                            <option value="2012">2012</option>
+                            <option value="2003">2003</option>
+                            <option value="2010">2010</option>
+                            <option value="2007">2007</option>
+                            <option value="1998">1998</option>
+                            <option value="1991">1991</option>
+                            <option value="1999">1999</option>
+                            <option value="2006">2006</option>
+                            <option value="1989">1989</option>
+                            <option value="2008">2008</option>
+                            <option value="2000">2000</option>
+                            <option value="2028">2028</option>
+                            <option value="1996">1996</option>
+                            <option value="2004">2004</option>
+                            <option value="2009">2009</option>
+                            <option value="2005">2005</option>
+                            <option value="1987">1987</option>
+                            <option value="2001">2001</option>
+                            <option value="1995">1995</option>
+                            <option value="2002">2002</option>
+                            <option value="1973">1973</option>
+                            <option value="1983">1983</option>
+                            <option value="1978">1978</option>
+                            <option value="1988">1988</option>
+                            <option value="1986">1986</option>
+                            <option value="1997">1997</option>
+                            <option value="1979">1979</option>
+                            <option value="1982">1982</option>
+                            <option value="1962">1962</option>
+                            <option value="1994">1994</option>
+                            <option value="1969">1969</option>
+                            <option value="1972">1972</option>
+                            <option value="1961">1961</option>
+                            <option value="1974">1974</option>
+                            <option value="1942">1942</option>
+                            <option value="1965">1965</option>
+                            <option value="1981">1981</option>
+                            <option value="1938">1938</option>
+                            <option value="1980">1980</option>
+                            <option value="1964">1964</option>
+                            <option value="1984">1984</option>
+                            <option value="1948">1948</option>
+                            <option value="1924">1924</option>
+                            <option value="1953">1953</option>
+                            <option value="1963">1963</option>
+                            <option value="1985">1985</option>
+                            <option value="1958">1958</option>
+                            <option value="1949">1949</option>
+                            <option value="1966">1966</option>
+                            <option value="1971">1971</option>
+                            <option value="1975">1975</option>
+                            <option value="1977">1977</option>
+                            <option value="1933">1933</option>
+                            </select>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="section section-gradient">
+            <div class="container">
+                <div class="search-summary" data-search-summary>正在载入影片数据...</div>
+                <div class="movie-grid" data-search-results></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <section>
+                <a class="footer-brand" href="index.html">
+                    <span class="brand-icon" aria-hidden="true">▶</span>
+                    <span>高清电影大全</span>
+                </a>
+                <p>推荐电影大全页面结合热度与口碑整理影片，提供榜单参考和精选浏览内容。</p>
+            </section>
+            <section>
+                <h3>快速导航</h3>
+                <a href="index.html">首页</a>
+                <a href="movies/index.html">全部影片</a>
+                <a href="categories.html">分类总览</a>
+                <a href="ranking.html">高分榜单</a>
+            </section>
+            <section>
+                <h3>热门分类</h3>
+                <a href="categories/genre-drama.html">剧情电影</a>
+                <a href="categories/genre-comedy.html">喜剧电影</a>
+                <a href="categories/genre-mystery.html">悬疑电影</a>
+                <a href="categories/genre-action.html">动作电影</a>
+            </section>
+            <section>
+                <h3>站点信息</h3>
+                <a href="info/guide.html">观看指南</a>
+                <a href="info/about.html">关于我们</a>
+                <a href="info/terms.html">免责声明</a>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 高清电影大全</span>
+            <span>高清影片 · 热门电影 · 口碑电影榜单</span>
+        </div>
+    </footer>
+
+    <script src="assets/search-data.js" defer></script>
+    <script src="assets/app.js" defer></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

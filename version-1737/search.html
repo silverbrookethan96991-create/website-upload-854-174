@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片-经典电影大全</title>
+  <meta name="description" content="搜索经典电影大全中的高清电影、精选影片、经典影片合集与电影片单。">
+  <meta name="keywords" content="搜索影片,经典电影大全,经典影片合集,高清电影,经典电影,高分电影,精选影片,电影片单">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="./index.html" aria-label="经典电影大全">
+      <span class="brand-icon"><span></span></span>
+      <span class="brand-text">
+        <strong>经典电影大全</strong>
+        <em>高清电影免费在线观看</em>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="./index.html">首页</a>
+      <div class="nav-dropdown">
+        <a href="./categories.html">分类</a>
+        <div class="dropdown-panel">
+            <a href="./category-classic-selection.html">经典精选</a>
+            <a href="./category-asia-cinema.html">亚洲光影</a>
+            <a href="./category-comedy-family.html">喜剧家庭</a>
+            <a href="./category-suspense-thriller.html">悬疑惊悚</a>
+            <a href="./category-romance-drama.html">爱情剧情</a>
+            <a href="./category-action-adventure.html">动作冒险</a>
+            <a href="./category-history-epic.html">历史史诗</a>
+            <a href="./category-world-collection.html">环球佳片</a>
+        </div>
+      </div>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./movies-001.html">全部影片</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" data-mobile-menu>
+    <form action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类总览</a>
+    <a href="./ranking.html">排行榜</a>
+    <a href="./movies-001.html">全部影片</a>
+    <div class="mobile-category-links">
+        <a href="./category-classic-selection.html">经典精选</a>
+        <a href="./category-asia-cinema.html">亚洲光影</a>
+        <a href="./category-comedy-family.html">喜剧家庭</a>
+        <a href="./category-suspense-thriller.html">悬疑惊悚</a>
+        <a href="./category-romance-drama.html">爱情剧情</a>
+        <a href="./category-action-adventure.html">动作冒险</a>
+        <a href="./category-history-epic.html">历史史诗</a>
+        <a href="./category-world-collection.html">环球佳片</a>
+    </div>
+  </div>
+</header>
+<main class="page-main">
+  <section class="page-hero compact-hero">
+    <div class="container">
+      <span class="eyebrow">Search</span>
+      <h1>搜索影片</h1>
+      <p>输入影片名、地区、年份、类型或标签，快速找到想看的高清电影。</p>
+      <form class="search-page-form" action="./search.html" method="get" data-search-page-form>
+        <input type="search" name="q" placeholder="搜索经典电影" autocomplete="off" data-search-page-input>
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="section-block">
+    <div class="container">
+      <div class="section-heading">
+        <h2 data-search-title>精选影片</h2>
+        <p data-search-summary>输入关键词或直接浏览推荐内容。</p>
+      </div>
+      <div class="movie-grid wide" id="search-results"></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="./index.html" aria-label="经典电影大全">
+        <span class="brand-icon"><span></span></span>
+        <span class="brand-text">
+          <strong>经典电影大全</strong>
+          <em>高清电影免费在线观看</em>
+        </span>
+      </a>
+      <p>经典电影大全栏目汇集多年代经典影片，覆盖国产、日韩、欧美和亚洲电影。</p>
+    </div>
+    <div>
+      <h3>快速导航</h3>
+      <div class="footer-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类总览</a>
+        <a href="./ranking.html">排行榜</a>
+        <a href="./movies-001.html">全部影片</a>
+      </div>
+    </div>
+    <div>
+      <h3>影片频道</h3>
+      <div class="footer-links">
+          <a href="./category-classic-selection.html">经典精选</a>
+          <a href="./category-asia-cinema.html">亚洲光影</a>
+          <a href="./category-comedy-family.html">喜剧家庭</a>
+          <a href="./category-suspense-thriller.html">悬疑惊悚</a>
+          <a href="./category-romance-drama.html">爱情剧情</a>
+          <a href="./category-action-adventure.html">动作冒险</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 经典电影大全 · 高清电影免费在线观看</div>
+</footer>
+  <script src="./assets/search-data.js"></script>
+  <script src="./assets/main.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

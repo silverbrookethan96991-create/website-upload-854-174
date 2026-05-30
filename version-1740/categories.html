@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类总览-推荐电影大全-高分电影排行榜-高清影片在线观看</title>
+    <meta name="description" content="推荐电影大全页面结合热度与口碑整理影片，提供榜单参考和精选浏览内容。">
+    <meta name="keywords" content="推荐电影大全,高分电影排行榜,高清影片,电影推荐,热门电影,口碑电影,电影榜单">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="主导航">
+            <div class="nav-inner">
+                <a class="brand" href="index.html" aria-label="返回首页">
+                    <span class="brand-icon" aria-hidden="true">▶</span>
+                    <span class="brand-text">
+                        <strong>高清电影大全</strong>
+                        <small>高分电影排行榜</small>
+                    </span>
+                </a>
+
+                <button class="mobile-menu-button" type="button" aria-label="打开菜单" data-menu-toggle>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" data-nav-menu>
+                    <a href="index.html">首页</a>
+                    <a href="movies/index.html">全部影片</a>
+                    <div class="nav-dropdown">
+                        <a href="categories.html">分类</a>
+                        <div class="dropdown-menu">
+                            <a href="categories/region-domestic.html">国产电影</a>
+                            <a href="categories/region-japan-korea.html">日韩电影</a>
+                            <a href="categories/region-euro-american.html">欧美电影</a>
+                            <a href="categories/region-other-region.html">其他地区</a>
+                        </div>
+                    </div>
+                    <a href="ranking.html">排行榜</a>
+                    <a href="search.html">搜索</a>
+                    <form class="nav-search" action="search.html" method="get">
+                        <input type="search" name="q" placeholder="搜索电影、类型、地区" aria-label="搜索影片">
+                        <button type="submit">搜索</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero compact-page-hero">
+            <div class="container">
+                <span class="eyebrow">分类总览</span>
+                <h1>分类总览</h1>
+                <p>按照地区、类型、题材整理影片，形成清晰内链入口。</p>
+            </div>
+        </section>
+
+        <section class="section section-gradient">
+            <div class="container category-overview">
+            <section class="category-overview-block">
+                <div class="section-heading">
+                    <h2>地区分类</h2>
+                </div>
+                <div class="category-grid">
+                    <a class="category-tile" href="categories/region-domestic.html">
+                        <span>国产电影</span>
+                        <strong>833</strong>
+                        <small>国产电影精选内容，共 833 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/region-japan-korea.html">
+                        <span>日韩电影</span>
+                        <strong>326</strong>
+                        <small>日韩电影精选内容，共 326 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/region-euro-american.html">
+                        <span>欧美电影</span>
+                        <strong>761</strong>
+                        <small>欧美电影精选内容，共 761 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/region-other-region.html">
+                        <span>其他地区</span>
+                        <strong>80</strong>
+                        <small>其他地区精选内容，共 80 部。</small>
+                    </a>
+                </div>
+            </section>
+            <section class="category-overview-block">
+                <div class="section-heading">
+                    <h2>国家与地区</h2>
+                </div>
+                <div class="category-grid">
+                    <a class="category-tile" href="categories/area-china-mainland.html">
+                        <span>中国大陆</span>
+                        <strong>456</strong>
+                        <small>中国大陆地区影片，共 456 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-usa.html">
+                        <span>美国</span>
+                        <strong>374</strong>
+                        <small>美国地区影片，共 374 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-japan.html">
+                        <span>日本</span>
+                        <strong>219</strong>
+                        <small>日本地区影片，共 219 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-hong-kong.html">
+                        <span>中国香港</span>
+                        <strong>171</strong>
+                        <small>中国香港地区影片，共 171 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-korea.html">
+                        <span>韩国</span>
+                        <strong>101</strong>
+                        <small>韩国地区影片，共 101 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-uk.html">
+                        <span>英国</span>
+                        <strong>90</strong>
+                        <small>英国地区影片，共 90 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-taiwan.html">
+                        <span>中国台湾</span>
+                        <strong>83</strong>
+                        <small>中国台湾地区影片，共 83 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-france.html">
+                        <span>法国</span>
+                        <strong>70</strong>
+                        <small>法国地区影片，共 70 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-china.html">
+                        <span>中国</span>
+                        <strong>55</strong>
+                        <small>中国地区影片，共 55 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-spain.html">
+                        <span>西班牙</span>
+                        <strong>31</strong>
+                        <small>西班牙地区影片，共 31 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-thailand.html">
+                        <span>泰国</span>
+                        <strong>26</strong>
+                        <small>泰国地区影片，共 26 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-germany.html">
+                        <span>德国</span>
+                        <strong>25</strong>
+                        <small>德国地区影片，共 25 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-india.html">
+                        <span>印度</span>
+                        <strong>20</strong>
+                        <small>印度地区影片，共 20 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-hong-kong-alt.html">
+                        <span>香港</span>
+                        <strong>20</strong>
+                        <small>香港地区影片，共 20 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-italy.html">
+                        <span>意大利</span>
+                        <strong>17</strong>
+                        <small>意大利地区影片，共 17 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/area-russia.html">
+                        <span>俄罗斯</span>
+                        <strong>16</strong>
+                        <small>俄罗斯地区影片，共 16 部。</small>
+                    </a>
+                </div>
+            </section>
+            <section class="category-overview-block">
+                <div class="section-heading">
+                    <h2>类型分类</h2>
+                </div>
+                <div class="category-grid">
+                    <a class="category-tile" href="categories/type-movie.html">
+                        <span>电影</span>
+                        <strong>1263</strong>
+                        <small>电影分类内容，共 1263 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-series.html">
+                        <span>剧集</span>
+                        <strong>403</strong>
+                        <small>剧集分类内容，共 403 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-tv-series.html">
+                        <span>电视剧</span>
+                        <strong>172</strong>
+                        <small>电视剧分类内容，共 172 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-animated-movie.html">
+                        <span>动画电影</span>
+                        <strong>25</strong>
+                        <small>动画电影分类内容，共 25 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-animated-series.html">
+                        <span>动画剧集</span>
+                        <strong>16</strong>
+                        <small>动画剧集分类内容，共 16 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-variety.html">
+                        <span>综艺</span>
+                        <strong>15</strong>
+                        <small>综艺分类内容，共 15 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-documentary.html">
+                        <span>纪录片</span>
+                        <strong>13</strong>
+                        <small>纪录片分类内容，共 13 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-web-movie.html">
+                        <span>网络电影</span>
+                        <strong>13</strong>
+                        <small>网络电影分类内容，共 13 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-animation.html">
+                        <span>动画</span>
+                        <strong>10</strong>
+                        <small>动画分类内容，共 10 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/type-web-series.html">
+                        <span>网络剧</span>
+                        <strong>10</strong>
+                        <small>网络剧分类内容，共 10 部。</small>
+                    </a>
+                </div>
+            </section>
+            <section class="category-overview-block">
+                <div class="section-heading">
+                    <h2>题材分类</h2>
+                </div>
+                <div class="category-grid">
+                    <a class="category-tile" href="categories/genre-drama.html">
+                        <span>剧情</span>
+                        <strong>719</strong>
+                        <small>剧情题材影片，共 719 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-comedy.html">
+                        <span>喜剧</span>
+                        <strong>394</strong>
+                        <small>喜剧题材影片，共 394 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-mystery.html">
+                        <span>悬疑</span>
+                        <strong>365</strong>
+                        <small>悬疑题材影片，共 365 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-romance.html">
+                        <span>爱情</span>
+                        <strong>332</strong>
+                        <small>爱情题材影片，共 332 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-action.html">
+                        <span>动作</span>
+                        <strong>289</strong>
+                        <small>动作题材影片，共 289 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-fantasy.html">
+                        <span>奇幻</span>
+                        <strong>250</strong>
+                        <small>奇幻题材影片，共 250 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-crime.html">
+                        <span>犯罪</span>
+                        <strong>225</strong>
+                        <small>犯罪题材影片，共 225 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-thriller.html">
+                        <span>惊悚</span>
+                        <strong>225</strong>
+                        <small>惊悚题材影片，共 225 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-family.html">
+                        <span>家庭</span>
+                        <strong>202</strong>
+                        <small>家庭题材影片，共 202 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-sci-fi.html">
+                        <span>科幻</span>
+                        <strong>181</strong>
+                        <small>科幻题材影片，共 181 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-history.html">
+                        <span>历史</span>
+                        <strong>132</strong>
+                        <small>历史题材影片，共 132 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-horror.html">
+                        <span>恐怖</span>
+                        <strong>120</strong>
+                        <small>恐怖题材影片，共 120 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-adventure.html">
+                        <span>冒险</span>
+                        <strong>116</strong>
+                        <small>冒险题材影片，共 116 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-war.html">
+                        <span>战争</span>
+                        <strong>80</strong>
+                        <small>战争题材影片，共 80 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-costume.html">
+                        <span>古装</span>
+                        <strong>62</strong>
+                        <small>古装题材影片，共 62 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-biography.html">
+                        <span>传记</span>
+                        <strong>53</strong>
+                        <small>传记题材影片，共 53 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-animation.html">
+                        <span>动画</span>
+                        <strong>50</strong>
+                        <small>动画题材影片，共 50 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-youth.html">
+                        <span>青春</span>
+                        <strong>49</strong>
+                        <small>青春题材影片，共 49 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-music.html">
+                        <span>音乐</span>
+                        <strong>43</strong>
+                        <small>音乐题材影片，共 43 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-sports.html">
+                        <span>运动</span>
+                        <strong>39</strong>
+                        <small>运动题材影片，共 39 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-psychology.html">
+                        <span>心理</span>
+                        <strong>36</strong>
+                        <small>心理题材影片，共 36 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-disaster.html">
+                        <span>灾难</span>
+                        <strong>29</strong>
+                        <small>灾难题材影片，共 29 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-inspirational.html">
+                        <span>励志</span>
+                        <strong>26</strong>
+                        <small>励志题材影片，共 26 部。</small>
+                    </a>
+                    <a class="category-tile" href="categories/genre-urban.html">
+                        <span>都市</span>
+                        <strong>26</strong>
+                        <small>都市题材影片，共 26 部。</small>
+                    </a>
+                </div>
+            </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <section>
+                <a class="footer-brand" href="index.html">
+                    <span class="brand-icon" aria-hidden="true">▶</span>
+                    <span>高清电影大全</span>
+                </a>
+                <p>推荐电影大全页面结合热度与口碑整理影片，提供榜单参考和精选浏览内容。</p>
+            </section>
+            <section>
+                <h3>快速导航</h3>
+                <a href="index.html">首页</a>
+                <a href="movies/index.html">全部影片</a>
+                <a href="categories.html">分类总览</a>
+                <a href="ranking.html">高分榜单</a>
+            </section>
+            <section>
+                <h3>热门分类</h3>
+                <a href="categories/genre-drama.html">剧情电影</a>
+                <a href="categories/genre-comedy.html">喜剧电影</a>
+                <a href="categories/genre-mystery.html">悬疑电影</a>
+                <a href="categories/genre-action.html">动作电影</a>
+            </section>
+            <section>
+                <h3>站点信息</h3>
+                <a href="info/guide.html">观看指南</a>
+                <a href="info/about.html">关于我们</a>
+                <a href="info/terms.html">免责声明</a>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 高清电影大全</span>
+            <span>高清影片 · 热门电影 · 口碑电影榜单</span>
+        </div>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

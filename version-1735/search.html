@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索筛选-高分亚洲电影</title>
+  <meta name="description" content="高分亚洲电影搜索筛选页，可按片名、地区、类型、年份和分类查找高清电影。">
+  <meta name="keywords" content="高分亚洲电影,高分电影排行榜,亚洲电影,高清电影,电影观看,精选影片,电影搜索,电影筛选">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="search-page">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="index.html" aria-label="高分亚洲电影">
+      <span class="logo-mark">▶</span>
+      <span class="logo-copy">
+        <span class="logo-name">高分亚洲电影</span>
+        <span class="logo-sub">高分电影排行榜</span>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown">
+        <a href="categories.html">分类</a>
+        <div class="dropdown-panel">
+          <a href="category-asian-selection.html">亚洲精选</a>
+          <a href="category-high-score.html">高分片单</a>
+          <a href="category-suspense-thriller.html">悬疑惊悚</a>
+          <a href="category-crime-action.html">犯罪动作</a>
+          <a href="category-drama-literary.html">剧情文艺</a>
+          <a href="category-sci-fi-fantasy.html">科幻奇幻</a>
+          <a href="category-romance-family.html">爱情家庭</a>
+          <a href="category-global-movies.html">全球佳片</a>
+        </div>
+      </div>
+      <a href="ranking.html">排行榜</a>
+      <a href="search.html" class="active">搜索</a>
+    </nav>
+    <form class="quick-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" aria-label="打开导航" data-menu-toggle>☰</button>
+  </div>
+  <div class="mobile-nav" data-mobile-nav>
+    <form action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <a href="index.html">首页</a>
+    <a href="categories.html">分类总览</a>
+    <a href="ranking.html">排行榜</a>
+    <a href="search.html">搜索筛选</a>
+    <div class="mobile-category-list">
+        <a href="category-asian-selection.html">亚洲精选</a>
+        <a href="category-high-score.html">高分片单</a>
+        <a href="category-suspense-thriller.html">悬疑惊悚</a>
+        <a href="category-crime-action.html">犯罪动作</a>
+        <a href="category-drama-literary.html">剧情文艺</a>
+        <a href="category-sci-fi-fantasy.html">科幻奇幻</a>
+        <a href="category-romance-family.html">爱情家庭</a>
+        <a href="category-global-movies.html">全球佳片</a>
+    </div>
+  </div>
+</header>
+<main>
+<section class="page-hero compact-hero">
+  <div class="page-hero-inner">
+    <p class="eyebrow">高分亚洲电影</p>
+    <h1>搜索与筛选</h1>
+    <p>输入片名、地区、类型或标签，快速筛选高分亚洲电影与精选影片。</p>
+  </div>
+</section>
+<section class="section search-section">
+  <div class="search-panel">
+    <label>
+      <span>关键词</span>
+      <input type="search" id="searchInput" placeholder="搜索片名、类型、地区、标签">
+    </label>
+    <label>
+      <span>分类</span>
+      <select id="categoryFilter">
+        <option value="">全部分类</option>
+          <option value="亚洲精选">亚洲精选</option>
+          <option value="高分片单">高分片单</option>
+          <option value="悬疑惊悚">悬疑惊悚</option>
+          <option value="犯罪动作">犯罪动作</option>
+          <option value="剧情文艺">剧情文艺</option>
+          <option value="科幻奇幻">科幻奇幻</option>
+          <option value="爱情家庭">爱情家庭</option>
+          <option value="全球佳片">全球佳片</option>
+      </select>
+    </label>
+    <label>
+      <span>年份</span>
+      <select id="yearFilter">
+        <option value="">全部年份</option>
+          <option value="根据片名判断">根据片名判断</option>
+          <option value="2031">2031</option>
+          <option value="2030">2030</option>
+          <option value="2029">2029</option>
+          <option value="2028">2028</option>
+          <option value="2027">2027</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+      </select>
+    </label>
+  </div>
+  <div class="search-status" id="searchStatus">输入关键词或选择条件，查看匹配影片。</div>
+  <div class="movie-grid" id="searchResults"></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="site-logo" href="index.html" aria-label="高分亚洲电影">
+        <span class="logo-mark">▶</span>
+        <span class="logo-copy">
+          <span class="logo-name">高分亚洲电影</span>
+          <span class="logo-sub">高分电影排行榜</span>
+        </span>
+      </a>
+      <p>高分亚洲电影页面围绕口碑较高的亚洲影片整理，结合榜单与片单展示相关内容。</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h3>快捷入口</h3>
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类总览</a>
+        <a href="ranking.html">高分榜单</a>
+        <a href="search.html">搜索影片</a>
+      </div>
+      <div>
+        <h3>热门分类</h3>
+        <a href="category-asian-selection.html">亚洲精选</a>
+        <a href="category-high-score.html">高分片单</a>
+        <a href="category-suspense-thriller.html">悬疑惊悚</a>
+        <a href="category-crime-action.html">犯罪动作</a>
+        <a href="category-drama-literary.html">剧情文艺</a>
+        <a href="category-sci-fi-fantasy.html">科幻奇幻</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">高分亚洲电影 · 高分电影排行榜 · 高清电影免费在线观看</div>
+</footer>
+<script src="assets/app.js"></script>
+<script src="assets/site-data.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推荐电影大全-高分电影排行榜-高清影片在线观看</title>
+    <meta name="description" content="推荐电影大全页面结合热度与口碑整理影片，提供榜单参考和精选浏览内容。">
+    <meta name="keywords" content="推荐电影大全,高分电影排行榜,高清影片,电影推荐,热门电影,口碑电影,电影榜单">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="主导航">
+            <div class="nav-inner">
+                <a class="brand" href="index.html" aria-label="返回首页">
+                    <span class="brand-icon" aria-hidden="true">▶</span>
+                    <span class="brand-text">
+                        <strong>高清电影大全</strong>
+                        <small>高分电影排行榜</small>
+                    </span>
+                </a>
+
+                <button class="mobile-menu-button" type="button" aria-label="打开菜单" data-menu-toggle>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-links" data-nav-menu>
+                    <a href="index.html">首页</a>
+                    <a href="movies/index.html">全部影片</a>
+                    <div class="nav-dropdown">
+                        <a href="categories.html">分类</a>
+                        <div class="dropdown-menu">
+                            <a href="categories/region-domestic.html">国产电影</a>
+                            <a href="categories/region-japan-korea.html">日韩电影</a>
+                            <a href="categories/region-euro-american.html">欧美电影</a>
+                            <a href="categories/region-other-region.html">其他地区</a>
+                        </div>
+                    </div>
+                    <a href="ranking.html">排行榜</a>
+                    <a href="search.html">搜索</a>
+                    <form class="nav-search" action="search.html" method="get">
+                        <input type="search" name="q" placeholder="搜索电影、类型、地区" aria-label="搜索影片">
+                        <button type="submit">搜索</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" data-hero>
+                <article class="hero-slide is-active" data-hero-slide>
+                    <img src="52.jpg" alt="东京出租车" class="hero-image">
+                    <div class="hero-shade"></div>
+                    <div class="hero-content container">
+                        <span class="eyebrow">日韩电影 · ★ 9.6</span>
+                        <h1>东京出租车</h1>
+                        <p>深夜的东京,一辆出租车穿梭于霓虹灯下,每个乘客都带着一个无法向人言说的故事。</p>
+                        <div class="hero-actions">
+                            <a class="primary-button" href="movie/1852.html">立即观看</a>
+                            <a class="ghost-button" href="ranking.html">查看排行榜</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="hero-slide" data-hero-slide>
+                    <img src="145.jpg" alt="新铁路少年" class="hero-image">
+                    <div class="hero-shade"></div>
+                    <div class="hero-content container">
+                        <span class="eyebrow">欧美电影 · ★ 9.6</span>
+                        <h1>新铁路少年</h1>
+                        <p>二战期间,被疏散到乡下的三个伦敦少年,无意间发现了一条废弃铁路,并由此揭开一个尘封的间谍谜案。</p>
+                        <div class="hero-actions">
+                            <a class="primary-button" href="movie/1945.html">立即观看</a>
+                            <a class="ghost-button" href="ranking.html">查看排行榜</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="hero-slide" data-hero-slide>
+                    <img src="22.jpg" alt="全民情敌" class="hero-image">
+                    <div class="hero-shade"></div>
+                    <div class="hero-content container">
+                        <span class="eyebrow">国产电影 · ★ 9.6</span>
+                        <h1>全民情敌</h1>
+                        <p>顶级约会顾问开直播教直男追女神,却意外被全国女性评为“头号公敌”,而他的下一个客户,是他自己的女儿。</p>
+                        <div class="hero-actions">
+                            <a class="primary-button" href="movie/1822.html">立即观看</a>
+                            <a class="ghost-button" href="ranking.html">查看排行榜</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="hero-slide" data-hero-slide>
+                    <img src="58.jpg" alt="比利·杰克归来" class="hero-image">
+                    <div class="hero-shade"></div>
+                    <div class="hero-content container">
+                        <span class="eyebrow">欧美电影 · ★ 9.6</span>
+                        <h1>比利·杰克归来</h1>
+                        <p>当年那个反战英雄比利·杰克老了,隐居在荒野,直到一群毒贩绑架了他的孙女,他必须重拾暴力。</p>
+                        <div class="hero-actions">
+                            <a class="primary-button" href="movie/0058.html">立即观看</a>
+                            <a class="ghost-button" href="ranking.html">查看排行榜</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="hero-slide" data-hero-slide>
+                    <img src="33.jpg" alt="莉迪亚" class="hero-image">
+                    <div class="hero-shade"></div>
+                    <div class="hero-content container">
+                        <span class="eyebrow">欧美电影 · ★ 9.6</span>
+                        <h1>莉迪亚</h1>
+                        <p>失踪七年的女儿莉迪亚突然回家,但母亲坚信:回来的这个人,不是她女儿。</p>
+                        <div class="hero-actions">
+                            <a class="primary-button" href="movie/1383.html">立即观看</a>
+                            <a class="ghost-button" href="ranking.html">查看排行榜</a>
+                        </div>
+                    </div>
+                </article>
+            <button type="button" class="hero-arrow hero-prev" data-hero-prev aria-label="上一张">‹</button>
+            <button type="button" class="hero-arrow hero-next" data-hero-next aria-label="下一张">›</button>
+            <div class="hero-dots">
+                    <button type="button" class="hero-dot is-active" data-hero-dot="0" aria-label="切换到第 1 张"></button>
+                    <button type="button" class="hero-dot" data-hero-dot="1" aria-label="切换到第 2 张"></button>
+                    <button type="button" class="hero-dot" data-hero-dot="2" aria-label="切换到第 3 张"></button>
+                    <button type="button" class="hero-dot" data-hero-dot="3" aria-label="切换到第 4 张"></button>
+                    <button type="button" class="hero-dot" data-hero-dot="4" aria-label="切换到第 5 张"></button>
+            </div>
+        </section>
+
+        <section class="section section-gradient">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>最新更新</h2>
+                    <p>按年份和收录顺序推荐，快速发现新片。</p>
+                </div>
+                <div class="scroll-shell">
+                    <button type="button" class="scroll-button left" data-scroll-left aria-label="向左滚动">‹</button>
+                    <div class="scroll-row" data-scroll-row>
+                    <a class="movie-card" href="movie/1877.html">
+                        <span class="poster-wrap">
+                            <img src="77.jpg" alt="难以忽视的真相2" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.4</span>
+                            <span class="meta-badge">2028</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>难以忽视的真相2</strong>
+                            <small>美国 · 纪录片</small>
+                            <em>距离戈尔的第一部纪录片已过去二十多年,他再次走访全球,记录下气候灾难,但也看到了足以改变未来的“惊人逆转”。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1828.html">
+                        <span class="poster-wrap">
+                            <img src="28.jpg" alt="费里布朗" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 7.4</span>
+                            <span class="meta-badge">2028</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>费里布朗</strong>
+                            <small>美国 · 电影</small>
+                            <em>一个口吃的黑人清洁工,在停尸房的深夜歌声意外掀翻了整个音乐界。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1459.html">
+                        <span class="poster-wrap">
+                            <img src="109.jpg" alt="惊天刺杀" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 8.4</span>
+                            <span class="meta-badge">2028</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>惊天刺杀</strong>
+                            <small>美国/德国 · 电影</small>
+                            <em>一名特勤局特工拥有“遇刺前倒回10秒”的能力,但他每次回溯都会让下一任总统死得更快。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1153.html">
+                        <span class="poster-wrap">
+                            <img src="103.jpg" alt="20小时" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.1</span>
+                            <span class="meta-badge">2028</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>20小时</strong>
+                            <small>美国 · 电影</small>
+                            <em>深海油井爆炸后,三名工程师被困在气压失衡的密闭舱内,氧气只够撑20小时。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1126.html">
+                        <span class="poster-wrap">
+                            <img src="76.jpg" alt="健二回家" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 7.5</span>
+                            <span class="meta-badge">2028</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>健二回家</strong>
+                            <small>日本 · 电影</small>
+                            <em>二战结束七十年后,中国养大的日本遗孤健二带着养女的骨灰,踏上回日本寻找亲生父母的摩托车之旅。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0035.html">
+                        <span class="poster-wrap">
+                            <img src="35.jpg" alt="太空鸡" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 8.7</span>
+                            <span class="meta-badge">2028</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>太空鸡</strong>
+                            <small>中国大陆 · 电影</small>
+                            <em>一只被遗弃在空间站的实验母鸡意外获得高智商,带领一群太空垃圾清理工对抗邪恶外星细菌。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1661.html">
+                        <span class="poster-wrap">
+                            <img src="11.jpg" alt="幸福门" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.1</span>
+                            <span class="meta-badge">2027</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>幸福门</strong>
+                            <small>韩国 · 剧集</small>
+                            <em>一扇名为“幸福门”的装置可以删除痛苦的记忆,但被删除的记忆开始自行变异并追杀主人。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1657.html">
+                        <span class="poster-wrap">
+                            <img src="7.jpg" alt="阿蒂卡监狱事件" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 8.2</span>
+                            <span class="meta-badge">2027</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>阿蒂卡监狱事件</strong>
+                            <small>美国 · 电影</small>
+                            <em>1971年阿蒂卡监狱暴动后,一名幸存囚犯用四十年时间为冤死兄弟讨回清白。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1605.html">
+                        <span class="poster-wrap">
+                            <img src="105.jpg" alt="桑巴尔普里纺织工" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 8.1</span>
+                            <span class="meta-badge">2027</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>桑巴尔普里纺织工</strong>
+                            <small>印度 · 电影</small>
+                            <em>19世纪印度纺织村,一个不识字的织工用一块“魔毯”骗过了英国殖民者。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1371.html">
+                        <span class="poster-wrap">
+                            <img src="21.jpg" alt="天降厨神独宠我" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 7.9</span>
+                            <span class="meta-badge">2027</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>天降厨神独宠我</strong>
+                            <small>中国大陆 · 剧集</small>
+                            <em>厨神从天庭被贬下凡,成了女主家里的钟点工,每天的任务是做满汉全席哄她开心。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1368.html">
+                        <span class="poster-wrap">
+                            <img src="18.jpg" alt="女士万岁" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 7.7</span>
+                            <span class="meta-badge">2027</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>女士万岁</strong>
+                            <small>意大利 · 剧集</small>
+                            <em>年迈的古怪女男爵临终前把庄园留给了三位护工,她的亲孙子必须扮成女装才能留下。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1269.html">
+                        <span class="poster-wrap">
+                            <img src="69.jpg" alt="消失爱人" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.3</span>
+                            <span class="meta-badge">2027</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>消失爱人</strong>
+                            <small>中国大陆 · 电影</small>
+                            <em>车祸失忆的女人醒来,被告知自己是豪门太太,但她从镜子里认出,那是闺蜜的脸。</em>
+                        </span>
+                    </a>
+                    </div>
+                    <button type="button" class="scroll-button right" data-scroll-right aria-label="向右滚动">›</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-flat">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>热门推荐</h2>
+                    <p>结合热度、口碑与类型覆盖挑选。</p>
+                </div>
+                <div class="movie-grid movie-grid-three">
+                    <a class="movie-card" href="movie/1852.html">
+                        <span class="poster-wrap">
+                            <img src="52.jpg" alt="东京出租车" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.6</span>
+                            <span class="meta-badge">2026</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>东京出租车</strong>
+                            <small>日本 · 电视剧</small>
+                            <em>深夜的东京,一辆出租车穿梭于霓虹灯下,每个乘客都带着一个无法向人言说的故事。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1945.html">
+                        <span class="poster-wrap">
+                            <img src="145.jpg" alt="新铁路少年" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.6</span>
+                            <span class="meta-badge">2025</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>新铁路少年</strong>
+                            <small>英国 · 电影</small>
+                            <em>二战期间,被疏散到乡下的三个伦敦少年,无意间发现了一条废弃铁路,并由此揭开一个尘封的间谍谜案。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1822.html">
+                        <span class="poster-wrap">
+                            <img src="22.jpg" alt="全民情敌" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.6</span>
+                            <span class="meta-badge">2025</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>全民情敌</strong>
+                            <small>中国大陆 · 电视剧</small>
+                            <em>顶级约会顾问开直播教直男追女神,却意外被全国女性评为“头号公敌”,而他的下一个客户,是他自己的女儿。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0058.html">
+                        <span class="poster-wrap">
+                            <img src="58.jpg" alt="比利·杰克归来" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.6</span>
+                            <span class="meta-badge">2026</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>比利·杰克归来</strong>
+                            <small>美国 · 电影</small>
+                            <em>当年那个反战英雄比利·杰克老了,隐居在荒野,直到一群毒贩绑架了他的孙女,他必须重拾暴力。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1383.html">
+                        <span class="poster-wrap">
+                            <img src="33.jpg" alt="莉迪亚" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.6</span>
+                            <span class="meta-badge">2024</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>莉迪亚</strong>
+                            <small>西班牙 · 剧集</small>
+                            <em>失踪七年的女儿莉迪亚突然回家,但母亲坚信:回来的这个人,不是她女儿。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0271.html">
+                        <span class="poster-wrap">
+                            <img src="121.jpg" alt="只有勇敢的人知道地狱" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.6</span>
+                            <span class="meta-badge">2025</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>只有勇敢的人知道地狱</strong>
+                            <small>美国 · 电影</small>
+                            <em>五位顶尖洞穴探险家挑战世界最深竖井,却发现井底不是岩石,而是一扇通往人类集体恐惧的门。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0261.html">
+                        <span class="poster-wrap">
+                            <img src="111.jpg" alt="龙门笑传" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.6</span>
+                            <span class="meta-badge">2024</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>龙门笑传</strong>
+                            <small>中国香港/中国大陆 · 电影</small>
+                            <em>龙门客栈老板娘金镶玉打算转型做连锁酒店,却遇上微服私访的东厂督主和真假难辨的江湖侠客。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1972.html">
+                        <span class="poster-wrap">
+                            <img src="22.jpg" alt="我美之梦" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.5</span>
+                            <span class="meta-badge">2025</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>我美之梦</strong>
+                            <small>韩国 · 剧集</small>
+                            <em>一个沉迷整容的“整形中毒女”和一个天生丑颜的“素颜神”,一场车祸导致她们灵魂互换,开启了对“美”的重新定义。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/1725.html">
+                        <span class="poster-wrap">
+                            <img src="75.jpg" alt="鬼屋奇谭" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.5</span>
+                            <span class="meta-badge">2025</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>鬼屋奇谭</strong>
+                            <small>美国 · 电影</small>
+                            <em>六个网红闯入最恐怖的鬼屋直播,却发现真正的恶鬼竟是“房东”。</em>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-gradient reverse">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>分类导航</h2>
+                    <p>按地区快速浏览，也可进入分类总览查看类型与题材。</p>
+                </div>
+                <div class="category-grid">
+                    <a class="category-tile" href="categories/region-domestic.html">
+                        <span>国产电影</span>
+                        <strong>833</strong>
+                        <small>精选华语热门影片与口碑佳作</small>
+                    </a>
+                    <a class="category-tile" href="categories/region-japan-korea.html">
+                        <span>日韩电影</span>
+                        <strong>326</strong>
+                        <small>日本、韩国高分影视与类型作品</small>
+                    </a>
+                    <a class="category-tile" href="categories/region-euro-american.html">
+                        <span>欧美电影</span>
+                        <strong>761</strong>
+                        <small>欧美院线、悬疑、动作与剧情大片</small>
+                    </a>
+                    <a class="category-tile" href="categories/region-other-region.html">
+                        <span>其他地区</span>
+                        <strong>80</strong>
+                        <small>更多国家与地区精选内容</small>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-flat">
+            <div class="container two-column-layout">
+                <div>
+                <div class="section-heading">
+                    <h2>精选片单</h2>
+                    <p>延续原站深色卡片、横图、渐变遮罩的视觉结构。</p>
+                </div>
+                    <div class="featured-layout">
+                        <a class="featured-large" href="movie/0001.html">
+                            <img src="1.jpg" alt="爱情食物链粤语" loading="lazy">
+                            <span class="featured-copy">
+                                <small>国产电影</small>
+                                <strong>爱情食物链粤语</strong>
+                                <em>保险经纪爱女神,女神爱音乐才子,才子爱餐厅老板娘,老板娘爱保险经纪,闭环食人。</em>
+                            </span>
+                        </a>
+                        <div class="featured-side">
+                            <a class="featured-small" href="movie/0002.html">
+                                <img src="2.jpg" alt="盲(电影)" loading="lazy">
+                                <span>
+                                    <small>国产电影</small>
+                                    <strong>盲(电影)</strong>
+                                    <em>★ 7.8</em>
+                                </span>
+                            </a>
+                            <a class="featured-small" href="movie/0003.html">
+                                <img src="3.jpg" alt="和平战士" loading="lazy">
+                                <span>
+                                    <small>欧美电影</small>
+                                    <strong>和平战士</strong>
+                                    <em>★ 9.1</em>
+                                </span>
+                            </a>
+                            <a class="featured-small" href="movie/0004.html">
+                                <img src="4.jpg" alt="结发夫妻" loading="lazy">
+                                <span>
+                                    <small>国产电影</small>
+                                    <strong>结发夫妻</strong>
+                                    <em>★ 9.2</em>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <aside class="ranking-panel">
+                    <div class="panel-heading">
+                        <h2>高分排行榜</h2>
+                        <a href="ranking.html">完整榜单</a>
+                    </div>
+                    <div class="rank-list">
+                        <a class="rank-item" href="movie/1852.html">
+                            <span class="rank-no">01</span>
+                            <img src="52.jpg" alt="东京出租车" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>东京出租车</strong>
+                                <small>日本 · 2026</small>
+                            </span>
+                            <em>★ 9.6</em>
+                        </a>
+                        <a class="rank-item" href="movie/1945.html">
+                            <span class="rank-no">02</span>
+                            <img src="145.jpg" alt="新铁路少年" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>新铁路少年</strong>
+                                <small>英国 · 2025</small>
+                            </span>
+                            <em>★ 9.6</em>
+                        </a>
+                        <a class="rank-item" href="movie/1822.html">
+                            <span class="rank-no">03</span>
+                            <img src="22.jpg" alt="全民情敌" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>全民情敌</strong>
+                                <small>中国大陆 · 2025</small>
+                            </span>
+                            <em>★ 9.6</em>
+                        </a>
+                        <a class="rank-item" href="movie/0058.html">
+                            <span class="rank-no">04</span>
+                            <img src="58.jpg" alt="比利·杰克归来" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>比利·杰克归来</strong>
+                                <small>美国 · 2026</small>
+                            </span>
+                            <em>★ 9.6</em>
+                        </a>
+                        <a class="rank-item" href="movie/1383.html">
+                            <span class="rank-no">05</span>
+                            <img src="33.jpg" alt="莉迪亚" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>莉迪亚</strong>
+                                <small>西班牙 · 2024</small>
+                            </span>
+                            <em>★ 9.6</em>
+                        </a>
+                        <a class="rank-item" href="movie/0271.html">
+                            <span class="rank-no">06</span>
+                            <img src="121.jpg" alt="只有勇敢的人知道地狱" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>只有勇敢的人知道地狱</strong>
+                                <small>美国 · 2025</small>
+                            </span>
+                            <em>★ 9.6</em>
+                        </a>
+                        <a class="rank-item" href="movie/0261.html">
+                            <span class="rank-no">07</span>
+                            <img src="111.jpg" alt="龙门笑传" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>龙门笑传</strong>
+                                <small>中国香港/中国大陆 · 2024</small>
+                            </span>
+                            <em>★ 9.6</em>
+                        </a>
+                        <a class="rank-item" href="movie/1972.html">
+                            <span class="rank-no">08</span>
+                            <img src="22.jpg" alt="我美之梦" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>我美之梦</strong>
+                                <small>韩国 · 2025</small>
+                            </span>
+                            <em>★ 9.5</em>
+                        </a>
+                        <a class="rank-item" href="movie/1725.html">
+                            <span class="rank-no">09</span>
+                            <img src="75.jpg" alt="鬼屋奇谭" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>鬼屋奇谭</strong>
+                                <small>美国 · 2025</small>
+                            </span>
+                            <em>★ 9.5</em>
+                        </a>
+                        <a class="rank-item" href="movie/0120.html">
+                            <span class="rank-no">10</span>
+                            <img src="120.jpg" alt="瓜纳华托木乃伊传奇" loading="lazy">
+                            <span class="rank-copy">
+                                <strong>瓜纳华托木乃伊传奇</strong>
+                                <small>墨西哥 · 2025</small>
+                            </span>
+                            <em>★ 9.5</em>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section-gradient">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>猜你喜欢</h2>
+                    <p>更多口碑电影与热门题材内容。</p>
+                </div>
+                <div class="movie-grid">
+                    <a class="movie-card" href="movie/0021.html">
+                        <span class="poster-wrap">
+                            <img src="21.jpg" alt="魔鬼孩子王2" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 7.8</span>
+                            <span class="meta-badge">2025</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>魔鬼孩子王2</strong>
+                            <small>美国 · 电影</small>
+                            <em>当年那个幼儿园特工如今成了颓废大叔,为了救回被绑架的女儿,他必须重返幼儿园当卧底。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0022.html">
+                        <span class="poster-wrap">
+                            <img src="22.jpg" alt="丽芙与英格玛" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 8.9</span>
+                            <span class="meta-badge">2022</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>丽芙与英格玛</strong>
+                            <small>瑞典 · 电影</small>
+                            <em>二十世纪最著名的银幕女神与最孤僻的导演之间,一段只存在于书信中的爱情。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0023.html">
+                        <span class="poster-wrap">
+                            <img src="23.jpg" alt="假面明星" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.4</span>
+                            <span class="meta-badge">2022</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>假面明星</strong>
+                            <small>韩国 · 剧集</small>
+                            <em>过气女团偶像签约成为当红“国民妹妹”的替身,却发现这张脸其实是整容成她的恐怖复仇工具。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0024.html">
+                        <span class="poster-wrap">
+                            <img src="24.jpg" alt="三次为定" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 8.3</span>
+                            <span class="meta-badge">2026</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>三次为定</strong>
+                            <small>中国大陆 · 电影</small>
+                            <em>大龄女青年获得超能力:每段感情可以回到过去三次,她试图用这三次机会找到完美男友。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0025.html">
+                        <span class="poster-wrap">
+                            <img src="25.jpg" alt="爱情盲选第四季" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 7.1</span>
+                            <span class="meta-badge">2023</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>爱情盲选第四季</strong>
+                            <small>美国 · 综艺</small>
+                            <em>单身男女在不见面的情况下仅凭对话订婚,然后见面、同居、办婚礼,全程五周。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0026.html">
+                        <span class="poster-wrap">
+                            <img src="26.jpg" alt="小城一梦之臭棋乱飞象" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 8.1</span>
+                            <span class="meta-badge">2026</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>小城一梦之臭棋乱飞象</strong>
+                            <small>中国 · 剧集</small>
+                            <em>民国小镇,一句象棋口诀“臭棋乱飞象”竟与连环命案现场完全吻合,不会下棋的警长被迫学棋破案。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0027.html">
+                        <span class="poster-wrap">
+                            <img src="27.jpg" alt="勇气与仁慈" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.2</span>
+                            <span class="meta-badge">2015</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>勇气与仁慈</strong>
+                            <small>美国 · 电影</small>
+                            <em>二战军医德斯蒙德·多斯拒绝持枪,却在钢锯岭上独自救下75名受伤战友,双手被绳索磨得只剩白骨。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0028.html">
+                        <span class="poster-wrap">
+                            <img src="28.jpg" alt="长笛与箭" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.3</span>
+                            <span class="meta-badge">2025</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>长笛与箭</strong>
+                            <small>法国 · 电影</small>
+                            <em>一位天才长笛手发现,她吹出的特定音符能激活一枚隐藏在城市钟楼里的巡航导弹。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0029.html">
+                        <span class="poster-wrap">
+                            <img src="29.jpg" alt="大麻烟疯潮" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.3</span>
+                            <span class="meta-badge">2006</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>大麻烟疯潮</strong>
+                            <small>美国 · 纪录片/剧情片</small>
+                            <em>这部1936年“反大麻”宣传片如今成了邪典神作,因为它每一条警告最终都变得让人无比向往。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0030.html">
+                        <span class="poster-wrap">
+                            <img src="30.jpg" alt="捕蛇少年" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 7.1</span>
+                            <span class="meta-badge">2024</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>捕蛇少年</strong>
+                            <small>中国大陆 · 电影</small>
+                            <em>山村少年为寻失踪父亲,被迫继承捕蛇技艺,却意外揭开一桩尘封十五年的连环命案。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0031.html">
+                        <span class="poster-wrap">
+                            <img src="31.jpg" alt="奇奇与蒂蒂" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 8.4</span>
+                            <span class="meta-badge">2023</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>奇奇与蒂蒂</strong>
+                            <small>美国 · 动画剧集</small>
+                            <em>两只花栗鼠经营一家私家侦探社,每集解决一个“童话角色失踪案”。</em>
+                        </span>
+                    </a>
+                    <a class="movie-card" href="movie/0032.html">
+                        <span class="poster-wrap">
+                            <img src="32.jpg" alt="陷阱:致命的诱惑" loading="lazy">
+                            <span class="poster-gradient"></span>
+                            <span class="rating-badge">★ 9.1</span>
+                            <span class="meta-badge">2026</span>
+                        </span>
+                        <span class="movie-info">
+                            <strong>陷阱:致命的诱惑</strong>
+                            <small>西班牙 · 电影</small>
+                            <em>偷情的男人醒来发现自己被锁在情妇家的地窖里,而门外传来他妻子和警探的对话声。</em>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <section>
+                <a class="footer-brand" href="index.html">
+                    <span class="brand-icon" aria-hidden="true">▶</span>
+                    <span>高清电影大全</span>
+                </a>
+                <p>推荐电影大全页面结合热度与口碑整理影片，提供榜单参考和精选浏览内容。</p>
+            </section>
+            <section>
+                <h3>快速导航</h3>
+                <a href="index.html">首页</a>
+                <a href="movies/index.html">全部影片</a>
+                <a href="categories.html">分类总览</a>
+                <a href="ranking.html">高分榜单</a>
+            </section>
+            <section>
+                <h3>热门分类</h3>
+                <a href="categories/genre-drama.html">剧情电影</a>
+                <a href="categories/genre-comedy.html">喜剧电影</a>
+                <a href="categories/genre-mystery.html">悬疑电影</a>
+                <a href="categories/genre-action.html">动作电影</a>
+            </section>
+            <section>
+                <h3>站点信息</h3>
+                <a href="info/guide.html">观看指南</a>
+                <a href="info/about.html">关于我们</a>
+                <a href="info/terms.html">免责声明</a>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 高清电影大全</span>
+            <span>高清影片 · 热门电影 · 口碑电影榜单</span>
+        </div>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
